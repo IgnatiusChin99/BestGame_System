@@ -11,13 +11,13 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
-     
+
 
     }
 
     protected void btnEnter_Click(object sender, EventArgs e)
     {
-        
+
         //create a new instance of clsOrder
         clsOrder Order = new clsOrder();
         //capture the Order Info
@@ -36,5 +36,21 @@ public partial class _Default : System.Web.UI.Page
     protected void txtOrder_ID_TextChanged(object sender, EventArgs e)
     {
 
+    }
+
+    protected void btnDelete_Click(object sender, EventArgs e)
+    {
+        clsOrder aOrder = new clsOrder();
+        Int32 o_id;
+        o_id = Convert.ToInt32(txtOrder_ID.Text);
+        aOrder.Delete(o_id);
+    }
+
+    protected void btnDelete_Click1(object sender, EventArgs e)
+    {
+        clsOrder aOrder = new clsOrder();
+        Int32 o_id;
+        o_id = Convert.ToInt32(txtOrder_ID.Text);
+        aOrder.Delete(o_id);
     }
 }
