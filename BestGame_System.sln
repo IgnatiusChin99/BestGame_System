@@ -9,25 +9,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestGame_Classes", "BestGam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestGame_Testing", "BestGame_Testing\BestGame_Testing.csproj", "{4915576D-5B98-452A-9928-C8DE4BB4D29D}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BestGame_FrontOffice", "BestGame_FrontOffice\", "{A2A1CEA1-1ECA-4548-B038-CACBA216B194}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BestGame_FrontOffice(1)", "BestGame_FrontOffice\", "{F2AE4E75-9ECA-48C3-9D5A-4C629F4E3D21}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
 		ProjectReferences = "{37d0636c-31d1-4fab-b1f8-5967d5c9708d}|BestGame_Classes.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_25891"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53394"
 		Debug.AspNetCompiler.PhysicalPath = "BestGame_FrontOffice\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_25891\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53394\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_25891"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53394"
 		Release.AspNetCompiler.PhysicalPath = "BestGame_FrontOffice\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_25891\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53394\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "25891"
+		VWDPort = "53394"
 		SlnRelativePath = "BestGame_FrontOffice\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
@@ -50,10 +50,10 @@ Global
 		{4915576D-5B98-452A-9928-C8DE4BB4D29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4915576D-5B98-452A-9928-C8DE4BB4D29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4915576D-5B98-452A-9928-C8DE4BB4D29D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2A1CEA1-1ECA-4548-B038-CACBA216B194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2A1CEA1-1ECA-4548-B038-CACBA216B194}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2A1CEA1-1ECA-4548-B038-CACBA216B194}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2A1CEA1-1ECA-4548-B038-CACBA216B194}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F2AE4E75-9ECA-48C3-9D5A-4C629F4E3D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2AE4E75-9ECA-48C3-9D5A-4C629F4E3D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2AE4E75-9ECA-48C3-9D5A-4C629F4E3D21}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2AE4E75-9ECA-48C3-9D5A-4C629F4E3D21}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,6 +18,11 @@
         </asp:DropDownList>
         <asp:TextBox ID="txtOrder_ID" runat="server" style="z-index: 1; left: 265px; top: 124px; position: absolute"></asp:TextBox>
         <asp:TextBox ID="txtInfo" runat="server" style="z-index: 1; left: 266px; top: 196px; position: absolute"></asp:TextBox>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="btnDelete" runat="server" style="z-index: 1; left: 10px; top: 91px; position: absolute" Text="Button" />
+        </p>
     </form>
 </body>
 </html>
