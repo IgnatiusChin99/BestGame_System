@@ -12,9 +12,9 @@ namespace BestGame_Testing
         public void InstanceOK()
         {
             //create an instance of the class we want to create
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             //test to see that it exists
-            Assert.IsNotNull(Order);
+            Assert.IsNotNull(AnOrder);
         }
 
 
@@ -23,26 +23,26 @@ namespace BestGame_Testing
         public void OrderStatusPropertyOK()
         {
             //create an instance of the class we want to create
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             //create some test data to assign to the property
             Boolean TestData = true;
             //assign the data to the property
-            Order.Status = TestData;
+            AnOrder.o_status = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(Order.Status, TestData);
+            Assert.AreEqual(AnOrder.o_status, TestData);
         }
 
         [TestMethod]
         public void OrderDatePropertyOK()
         {
             //create an instance of the class we want to create
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             //create some test data to assign to the property
             DateTime TestData = DateTime.Now.Date;
             //assign the data to the property
-            Order.DateAdded = TestData;
+            AnOrder.o_date = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(Order.DateAdded, TestData);
+            Assert.AreEqual(AnOrder.o_date, TestData);
         }
 
 
@@ -50,13 +50,13 @@ namespace BestGame_Testing
         public void OrderIDPropertyOK()
         {
             //create an instance of the class we want to create
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             //create some test data to assign to the property
-            Int32 TestData = 1;
+            Int32 TestData = 4;
             //assign the data to the property
-            Order.OrderID = TestData;
+            AnOrder.o_id = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(Order.OrderID, TestData);
+            Assert.AreEqual(AnOrder.o_id, TestData);
         }
 
 
@@ -64,13 +64,13 @@ namespace BestGame_Testing
         public void OrderInformationPropertyOK()
         {
             //create an instance of the class we want to create
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             //create some test data to assign to the property
-            string TestData = "21b";
+            string TestData = "fdghd";
             //assign the data to the property
-            Order.Info = TestData;
+            AnOrder.o_information = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(Order.Info, TestData);
+            Assert.AreEqual(AnOrder.o_information, TestData);
         }
 
 
@@ -78,13 +78,13 @@ namespace BestGame_Testing
         public void FindMethodOK()
         {
             //create an instance of the class we want to create
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             //boolean variable to store the result of the validation
             Boolean Found = false;
             //create some test data to use with the method
-            Int32 Order_ID = 1;
+            Int32 o_id = 4;
             //invoke the method
-            Found = Order.Find(Order_ID);
+            Found = AnOrder.Find(o_id);
             //test to see that the result is correct
             Assert.IsTrue(Found);
         }
@@ -95,17 +95,17 @@ namespace BestGame_Testing
         public void TestOrderIDFound()
         {
             //create an instance of the class we want to create
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             //boolean variable to store the result of the search
             Boolean Found = false;
             //boolean variable to record if data is OK (assume it is)
             Boolean OK = true;
             //create some test data to use with the method
-            Int32 OrderID = 21;
+            Int32 o_id = 4;
             //invoke the method
-            Found = Order.Find(OrderID);
+            Found = AnOrder.Find(o_id);
             //check the address no
-            if (Order.OrderID != 21)
+            if (AnOrder.o_id != 4)
             {
                 OK = false;
             }
@@ -118,13 +118,13 @@ namespace BestGame_Testing
         [TestMethod]
         public void TestDateAddedFound()
         {
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 OrderID = 21;
-            Found = Order.Find(OrderID);
+            Int32 o_id = 4;
+            Found = AnOrder.Find(o_id);
 
-            if(Order.DateAdded != Convert.ToDateTime("16/09/2019"))
+            if(AnOrder.o_date != Convert.ToDateTime("16/12/2019"))
             {
                 OK = false;
             }
@@ -135,13 +135,13 @@ namespace BestGame_Testing
         [TestMethod]
         public void TestStatusFound()
         {
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 OrderID = 21;
-            Found = Order.Find(OrderID);
+            Int32 o_id = 4;
+            Found = AnOrder.Find(o_id);
 
-            if (Order.Status != true)
+            if (AnOrder.o_status != true)
             {
                 OK = false;
             }
@@ -152,12 +152,12 @@ namespace BestGame_Testing
         [TestMethod]
         public void TestInformationFound()
         {
-            clsOrder Order = new clsOrder();
+            clsOrder AnOrder = new clsOrder();
             Boolean Found = false;
             Boolean OK = true;
-            Int32 OrderID = 21;
-            Found = Order.Find(OrderID);
-            if (Order.Info != "as")
+            Int32 o_id = 4;
+            Found = AnOrder.Find(o_id);
+            if (AnOrder.o_information != "fdghd")
             {
                 OK = false;
             }
