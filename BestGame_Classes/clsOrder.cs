@@ -14,7 +14,8 @@ namespace BestGame_Classes
         private bool mStatus;
         private string mInfo;
 
-        public bool Status
+
+        public bool o_status
         {
             get
             {
@@ -25,10 +26,10 @@ namespace BestGame_Classes
             {
                 mStatus = value;
             }
-                
-                
         }
-        public DateTime DateAdded
+
+
+        public DateTime o_date
         {
             get
             {
@@ -38,25 +39,23 @@ namespace BestGame_Classes
             {
                 mDateAdded = value;
             }
-
-
-
-
-
         }
-        public int OrderID
+
+
+        public int o_id
         {
             get
             {
                 return mOrder_ID;
-            } set
+            }
+            set
             {
                 mOrder_ID = value;
             }
-
-
         }
-        public string Info
+
+
+        public string o_information
         {
             get
             {
@@ -69,12 +68,12 @@ namespace BestGame_Classes
             }
         }
 
-        public bool Find(int Order_ID)
+        public bool Find(int o_id)
         {
 
             clsDataConnection DB = new clsDataConnection();
 
-            DB.AddParameter("@o_id", OrderID);
+            DB.AddParameter("@o_id", o_id);
 
             DB.Execute("sproc_tblOrder_FilterByOrderNo");
 
@@ -102,11 +101,11 @@ namespace BestGame_Classes
         }
 
 
-        public void Delete(Int32 Order_ID)
+        public void Delete(Int32 o_id)
         {
             clsDataConnection DB = new clsDataConnection();
 
-            DB.AddParameter("@OrderID", Order_ID);
+            DB.AddParameter("@o_id", o_id);
             DB.Execute("sproc_tblOrder_Delete");
         }
 

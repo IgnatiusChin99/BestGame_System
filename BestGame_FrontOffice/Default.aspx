@@ -14,15 +14,13 @@
         <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 134px; top: 123px; position: absolute" Text="Order ID"></asp:Label>
         <asp:Label ID="Label2" runat="server" style="z-index: 1; left: 104px; top: 197px; position: absolute; height: 19px" Text="Order Information"></asp:Label>
         <asp:Label ID="O_date" runat="server" style="z-index: 1; left: 155px; top: 267px; position: absolute" Text="Order Date"></asp:Label>
-        <asp:DropDownList ID="dboxStatus" runat="server" style="z-index: 1; left: 270px; top: 263px; position: absolute">
-        </asp:DropDownList>
         <asp:TextBox ID="txtOrder_ID" runat="server" style="z-index: 1; left: 265px; top: 124px; position: absolute"></asp:TextBox>
         <asp:TextBox ID="txtInfo" runat="server" style="z-index: 1; left: 266px; top: 196px; position: absolute"></asp:TextBox>
         <p>
             &nbsp;</p>
         <p>
-            <asp:Button ID="btnDelete" runat="server" style="z-index: 1; left: 10px; top: 91px; position: absolute" Text="Button" />
-        </p>
+            &nbsp;</p>
+        <asp:Button ID="btnFind" runat="server" OnClick="btnFind_Click" style="z-index: 1; left: 420px; top: 133px; position: absolute" Text="Find" />
     </form>
 </body>
 </html>
